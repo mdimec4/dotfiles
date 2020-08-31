@@ -1,39 +1,9 @@
-set nocompatible              " be iMproved, required
-filetype off                  " required
-
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-" alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
-
-" let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
-
-" The following are examples of different formats supported.
-" Keep Plugin commands between vundle#begin/end.
-
-Plugin 'ycm-core/YouCompleteMe'
-
-" All of your Plugins must be added before the following line
-call vundle#end()            " required
 filetype plugin indent on    " required
-" To ignore plugin indent changes, instead use:
-"filetype plugin on
-"
-" Brief help
-" :PluginList       - lists configured plugins
-" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
-" :PluginSearch foo - searches for foo; append `!` to refresh local cache
-" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
-"
-" see :h vundle for more details or wiki for FAQ
-" Put your non-Plugin stuff after this line
-
 "set mouse=a
 set spell spelllang=en_us
 syntax on
 set background=dark " better contrasts on dark screens
+set number " display line numbers
 
 " Go fmt
 autocmd  BufWritePost *.go !gofmt -w <afile> | edit
@@ -48,7 +18,6 @@ autocmd  BufWritePost *.go !gofmt -w <afile> | edit
 
 " YCM config
 map <C-]> :YcmCompleter GoTo<CR>
-map <C-s> :YcmCompleter GoToSymbol<CR>
 map <C-r> :YcmCompleter GoToReferences<CR>
 map <C-d> :YcmCompleter GetDoc<CR>
 map <C-t> :YcmCompleter GeType<CR>
