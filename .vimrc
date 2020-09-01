@@ -21,6 +21,8 @@ map <C-]> :YcmCompleter GoTo<CR>
 map <C-r> :YcmCompleter GoToReferences<CR>
 map <C-d> :YcmCompleter GetDoc<CR>
 map <C-t> :YcmCompleter GeType<CR>
+map <C-e> :YcmCompleter GoToDeclaration<CR>
+map <C-f> :YcmCompleter GoToDefinition<CR>
 
 " python-mode
 " Turn on the whole plugin
