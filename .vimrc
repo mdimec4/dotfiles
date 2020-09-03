@@ -18,7 +18,7 @@ autocmd  BufWritePost *.go !gofmt -w <afile> | edit
 
 " YCM config
 map <C-]> :YcmCompleter GoTo<CR>
-map <C-r> :YcmCompleter GoToReferences<CR>
+map <C-t> :YcmCompleter GoToReferences<CR>
 map <C-d> :YcmCompleter GetDoc<CR>
 map <C-t> :YcmCompleter GeType<CR>
 map <C-e> :YcmCompleter GoToDeclaration<CR>
