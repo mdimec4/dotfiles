@@ -17,12 +17,12 @@ autocmd  BufWritePost *.go !gofmt -w <afile> | edit
 " autocmd  BufWritePost *.py !autopep8 --in-place <afile> | edit
 
 " YCM config
-map <C-]> :YcmCompleter GoTo<CR>
-map <C-t> :YcmCompleter GoToReferences<CR>
-map <C-d> :YcmCompleter GetDoc<CR>
-map <C-t> :YcmCompleter GeType<CR>
-map <C-e> :YcmCompleter GoToDeclaration<CR>
-map <C-f> :YcmCompleter GoToDefinition<CR>
+map <Leader>g :YcmCompleter GoTo<CR>
+map <Leader>n :YcmCompleter GoToRefernces<CR>
+map <Leader>e :YcmCompleter GoToDeclaration<CR>
+map <Leader>f :YcmCompleter GoToDefinition<CR>
+map <Leader>d :YcmCompleter GetDoc<CR>
+map <Leader>t :YcmCompleter GeType<CR>
 
 " python-mode
 " Turn on the whole plugin
