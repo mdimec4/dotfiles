@@ -6,6 +6,7 @@
 " - https://github.com/PieterjanMontens/vim-pipenv
 " - https://github.com/darrikonn/vim-isort
 " - https://github.com/embear/vim-localvimrc
+" - https://github.com/fatih/vim-go
 
 filetype plugin indent on    " required
 "set mouse=a
