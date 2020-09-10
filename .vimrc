@@ -1,3 +1,12 @@
+" installed plugines
+" - https://github.com/preservim/nerdtree
+" - https://github.com/python-mode/python-mode
+" - https://github.com/ycm-core/YouCompleteMe
+" - https://github.com/jmcantrell/vim-virtualenv
+" - https://github.com/PieterjanMontens/vim-pipenv
+" - https://github.com/darrikonn/vim-isort
+" - https://github.com/embear/vim-localvimrc
+
 filetype plugin indent on    " required
 "set mouse=a
 set spell spelllang=en_us
@@ -8,6 +17,7 @@ set number " display line numbers
 " Go fmt
 autocmd  BufWritePost *.go !gofmt -w <afile> | edit
 
+let g:localvimrc_ask = 1
 
 "" for Python
 "au FileType py
@@ -15,6 +25,13 @@ autocmd  BufWritePost *.go !gofmt -w <afile> | edit
 
 " run pep8 on save
  autocmd  BufWritePost *.py !autopep8 --in-place <afile> | edit
+
+" vim isort
+" CWD to the root of git repo when opening file inside repo
+let g:gitroot=system("git rev-parse --show-toplevel")
+let g:is_gitrepo = v:shell_error == 0
+silent! cd `=gitroot`
+let g:vim_isort_map = '<C-i>'
 
 " YCM config
 map <Leader>g :YcmCompleter GoTo<CR>
