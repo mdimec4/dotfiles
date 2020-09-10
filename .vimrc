@@ -25,7 +25,7 @@ let g:localvimrc_ask = 1
 "    \ setlocal tabstop=8 softtabstop=4 shiftwidth=4 textwidth=79 expandtab autoindenti fileformat=unix
 
 " run pep8 on save
- autocmd  BufWritePost *.py !autopep8 --in-place <afile> | edit
+autocmd  BufWritePost *.py !autopep8 --in-place <afile> | edit
 
 " vim isort
 " CWD to the root of git repo when opening file inside repo
@@ -33,6 +33,7 @@ let g:gitroot=system("git rev-parse --show-toplevel")
 let g:is_gitrepo = v:shell_error == 0
 silent! cd `=gitroot`
 let g:vim_isort_map = '<C-i>'
+autocmd BufWritePre *.py :Isort
 
 " YCM config
 map <Leader>g :YcmCompleter GoTo<CR>
