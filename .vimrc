@@ -13,12 +13,12 @@ autocmd  BufWritePost *.go !gofmt -w <afile> | edit
 "au FileType py
 "    \ setlocal tabstop=8 softtabstop=4 shiftwidth=4 textwidth=79 expandtab autoindenti fileformat=unix
 
-"" run pep8 on save
-" autocmd  BufWritePost *.py !autopep8 --in-place <afile> | edit
+" run pep8 on save
+ autocmd  BufWritePost *.py !autopep8 --in-place <afile> | edit
 
 " YCM config
 map <Leader>g :YcmCompleter GoTo<CR>
-map <Leader>n :YcmCompleter GoToRefernces<CR>
+map <Leader>n :YcmCompleter GoToReferences<CR>
 map <Leader>e :YcmCompleter GoToDeclaration<CR>
 map <Leader>f :YcmCompleter GoToDefinition<CR>
 map <Leader>d :YcmCompleter GetDoc<CR>
@@ -247,3 +247,4 @@ let g:pymode_syntax_docstrings = g:pymode_syntax_all
 
 au FileType js, jsx, html css
     \ setlocal tabstop=2 softtabstop=2i shiftwidth=2 
+
