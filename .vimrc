@@ -1,4 +1,4 @@
-" installed plugines
+" installed plugins
 " - https://github.com/preservim/nerdtree
 " - https://github.com/python-mode/python-mode
 " - https://github.com/ycm-core/YouCompleteMe
