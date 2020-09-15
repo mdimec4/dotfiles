@@ -13,6 +13,7 @@ set background=dark " better contrasts on dark screens
 set number " display line numbers
 
 " Spell checking configuration
+set spelllang=en_us
 set nospell
 " Enable spelunker.vim. (default: 1)
 " 1: enable
