@@ -56,7 +56,7 @@ let g:spelunker_disable_email_checking = 1
 
 " Disable account name checking, e.g. @foobar, foobar@. (default: 0)
 " NOTE: Spell checking is also disabled for JAVA annotations.
-let g:spelunker_disable_account_name_checking = 0
+let g:spelunker_disable_account_name_checking = 1
 
 " Disable acronym checking. (default: 0)
 let g:spelunker_disable_acronym_checking = 1
@@ -89,7 +89,7 @@ let g:spelunker_complex_or_compound_word_group = 'SpelunkerComplexOrCompoundWord
 highlight SpelunkerSpellBad cterm=underline ctermfg=247 gui=underline guifg=#9e9e9e
 highlight SpelunkerComplexOrCompoundWord cterm=underline ctermfg=NONE gui=underline guifg=NONE 
 " User Whitelist
-let g:spelunker_white_list_for_user = ['django']
+let g:spelunker_white_list_for_user = ['django', 'queryset']
 
 
 " Go fmt
