@@ -1,0 +1,3 @@
+simple-mtpfs --device 1 /mnt/mtp -o uid=1000 -o gid=1000 -o allow_other
+
+https://www.romanzolotarev.com/openbsd/mtp.html?n
