@@ -4,6 +4,7 @@
 " - https://github.com/ycm-core/YouCompleteMe
 " - https://github.com/kamykn/spelunker.vim
 " - https://github.com/fatih/vim-go
+" - https://github.com/tomlion/vim-solidity
 
 filetype plugin indent on    " required
 "set mouse=a
