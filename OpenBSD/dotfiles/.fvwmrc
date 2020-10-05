@@ -100,7 +100,6 @@ AddToMenu RootMenu	"Root Menu"	Title
 +			"Firefox-ESR"	Exec exec firefox-esr
 +			"Gedit"		Exec exec gedit
 +			"Libreoffice"	Exec exec libreoffice
-+			"Dosbox"	Exec exec dosbox
 +                       "Vlc"        	Exec exec vlc
 +                       "Transimssion-gtk"        Exec exec transmission-gtk
 +                       "Mc"           	Exec exec xterm -T mc -e mc
