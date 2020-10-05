@@ -1,3 +1,4 @@
+set encoding=utf-8
 " installed plugins
 " - https://github.com/preservim/nerdtree
 " - https://github.com/python-mode/python-mode
