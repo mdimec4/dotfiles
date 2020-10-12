@@ -1,4 +1,5 @@
-start-pulseaudio-x11 &
+# start-pulseaudio-x11 &
+pulseaudio &
 xset s 300
 ##ssh-add -k ~/.ssh/id_rsa
 if test $ALT_WM = "lxde"; then
